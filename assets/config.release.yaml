@@ -1,0 +1,8 @@
+# release:网络环境  local:本地开发模式  debug:debug 模式
+mode: release
+
+# ---------------- 正式服 ---------------- #
+baseUrl: https://api.ssgfgtfy.com/app/api/
+
+# 图片URL
+imageUrl: https://api.ssgfgtfy.com/app/api/
