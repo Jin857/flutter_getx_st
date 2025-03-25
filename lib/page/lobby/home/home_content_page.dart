@@ -67,7 +67,7 @@ class _HomeContentPageState extends State<HomeContentPage>
           ),
         ),
         SliverPadding(
-          padding: const EdgeInsets.symmetric(vertical: 5),
+          padding: const EdgeInsets.symmetric(horizontal: 5),
           sliver: SliverGrid(
             delegate: SliverChildBuilderDelegate(
               (context, index) {
@@ -102,34 +102,37 @@ class _HomeContentPageState extends State<HomeContentPage>
             ),
           ),
         ),
-        SliverMasonryGrid(
-          crossAxisSpacing: 5,
-          mainAxisSpacing: 5,
-          delegate: SliverChildBuilderDelegate(
-            (context, index) {
-              final isOdd = index % 2 == 1;
-              final imageIdex = index % 4;
-              return Container(
-                alignment: Alignment.center,
-                color: isOdd ? Colors.white : const Color(0xFFEAEAEA),
-                child: GestureDetector(
-                  onTap: () {},
-                  child: ProductCard(
-                    image: images[imageIdex],
-                    name: "卡片内容($index)-$imageIdex",
-                    subtitle: index % 3 == 1
-                        ? "卡拉斯京卢卡斯家了阿斯利。"
-                        : index % 3 == 2
-                            ? "卡拉斯京卢卡斯家了阿斯利康将阿斯科利阿斯科利将阿斯利康将，啊商家阿斯利康将阿三，失联客机啊算了。"
-                            : "卡拉斯京卢卡斯家了阿斯利康将阿斯科利阿斯科利将阿斯利康将，啊商家阿斯利康将阿三，失联客机啊算了。卡拉斯京卢卡斯家了阿斯利康将阿斯科利阿斯科利将阿斯利康将，啊商家阿斯利康将阿三，失联客机啊算了。",
+        SliverPadding(
+          padding: const EdgeInsets.symmetric(vertical: 5),
+          sliver: SliverMasonryGrid(
+            crossAxisSpacing: 5,
+            mainAxisSpacing: 5,
+            delegate: SliverChildBuilderDelegate(
+              (context, index) {
+                final isOdd = index % 2 == 1;
+                final imageIdex = index % 4;
+                return Container(
+                  alignment: Alignment.center,
+                  color: isOdd ? Colors.white : const Color(0xFFEAEAEA),
+                  child: GestureDetector(
+                    onTap: () {},
+                    child: ProductCard(
+                      image: images[imageIdex],
+                      name: "卡片内容($index)-$imageIdex",
+                      subtitle: index % 3 == 1
+                          ? "卡拉斯京卢卡斯家了阿斯利。"
+                          : index % 3 == 2
+                              ? "卡拉斯京卢卡斯家了阿斯利康将阿斯科利阿斯科利将阿斯利康将，啊商家阿斯利康将阿三，失联客机啊算了。"
+                              : "卡拉斯京卢卡斯家了阿斯利康将阿斯科利阿斯科利将阿斯利康将，啊商家阿斯利康将阿三，失联客机啊算了。卡拉斯京卢卡斯家了阿斯利康将阿斯科利阿斯科利将阿斯利康将，啊商家阿斯利康将阿三，失联客机啊算了。",
+                    ),
                   ),
-                ),
-              );
-            },
-            childCount: 30,
-          ),
-          gridDelegate: SliverSimpleGridDelegateWithMaxCrossAxisExtent(
-            maxCrossAxisExtent: Get.width / 2,
+                );
+              },
+              childCount: 30,
+            ),
+            gridDelegate: SliverSimpleGridDelegateWithMaxCrossAxisExtent(
+              maxCrossAxisExtent: Get.width / 2,
+            ),
           ),
         ),
       ],

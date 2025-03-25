@@ -225,7 +225,7 @@ class MenuItem extends StatelessWidget {
           title,
           style: TextStyle(
             color: select ? Colors.red : Colors.black87,
-            fontWeight: select ? FontWeight.bold : FontWeight.normal,
+            fontWeight: FontWeight.normal,
           ),
         ),
         if (select)
