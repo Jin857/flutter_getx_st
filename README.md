@@ -2,6 +2,19 @@
 
 学习 Flutter Getx 框架教程.
 
+## 优点:
+
+1. 简单易用: GetX提供了一个简洁的API，使得状态管理、路由、依赖注入等变得非常简单。
+2. 性能【重点】: GetX 声称有优异的性能，因为它使用了响应式编程。【使用了响应式编程】
+3. 一致性: 它提供了一站式解决方案，用于处理状态管理、导航、依赖注入和国际化等。
+4. 灵活性: 你可以只使用你需要的部分，比如只使用状态管理而不使用路由管理。
+
+## 缺点:
+1. 抽象层: GetX提供了很多的抽象，这可能会隐藏Flutter框架一些核心概念。
+2. 社区接受度: 虽然GetX社区正在增长，但它没有像Provider或Bloc那样的广泛接受度。
+3. 一站式解决方案的问题: 如果你的项目不需要这么多的功能，那么GetX可能会显得有点过重。
+
+
 - [关于 flutter_getx_st ](#flutter_getx_st)
 - [安装](#安装)
 - [路由进阶](#路由进阶)
@@ -316,6 +329,19 @@ obs 数据如何使用
 ## 因为多个isolate之间相互调用
 因为isolate之间互不干扰，所以isolate之间的变动是不共用的，所以需要有个服务去关联isolate之间的运行。
 用法教程: isolate_main.dart
+
+# 三方包
+## 状态管理工具
+### signals
+    Flutter Signals是一个基于Preact Signals的Dart库，旨在简化Dart和Flutter中的响应式编程。它提供了一个细粒度的响应式系统，能够自动跟踪依赖关系并在不再需要时释放它们。Flutter Signals支持多种平台，包括Dart JS、Shelf Server、CLI、VM和Flutter（Web、移动和桌面），适用于任何Dart项目。
+### Getx
+    Getx可以托管你的程序，依赖注入，主题，屏幕尺寸，路由都可以被Getx管理。比如简单的Obx函数将StatefulWidget封装，通过全局的NotifyManager来注册，管理被捕获的值。
+### Proider
+    Flutter Provider 是一个流行的状态管理解决方案，旨在帮助开发人员有效地管理应用程序中的状态。它基于InheritedWidget构建，提供了一种简单而强大的方法来在Flutter应用程序中共享状态。Provider允许将数据模型暴露给整个应用程序，并在需要时轻松地访问和更新状态。
+    
+
+
+
 
 
 

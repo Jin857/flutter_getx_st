@@ -1,5 +1,6 @@
 import 'package:flutter_getx_st/binding/home_binding.dart';
 import 'package:flutter_getx_st/binding/login/login_binding.dart';
+import 'package:flutter_getx_st/page/hero/hero_animation_route.dart';
 import 'package:flutter_getx_st/page/lobby/lobby_main.dart';
 import 'package:flutter_getx_st/page/login/login.dart';
 import 'package:flutter_getx_st/page/other/other.dart';
@@ -34,6 +35,14 @@ class AppPages {
         GetPage(
           name: Routes.FIRST,
           page: () => First(),
+        ),
+        GetPage(
+          name: Routes.HREOA,
+          page: () => HeroAnimationRouteA(),
+        ),
+        GetPage(
+          name: Routes.HREOB,
+          page: () => HeroAnimationRouteB(),
         ),
         GetPage(
           name: Routes.SECEOND,

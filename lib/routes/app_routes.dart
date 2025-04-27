@@ -16,6 +16,10 @@ abstract class Routes {
   /// 扫描二维码
   static const SCANNER = '/scanner';
 
+  /// hero 动画
+  static const HREOA = '/heroA';
+  static const HREOB = '/heroB';
+  
   static const FIRST = '/first';
   static const SECEOND = '/second';
   static const THIRD = '/third';

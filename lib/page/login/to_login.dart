@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_st/routes/app_pages.dart';
 import 'package:get/get.dart';
 
 class ToLogin extends StatelessWidget {
@@ -9,7 +10,8 @@ class ToLogin extends StatelessWidget {
     return Center(
       child: TextButton(
         onPressed: () {
-          Get.rootDelegate.offAndToNamed("/login");
+          // Get.rootDelegate.offAndToNamed("/login");
+          Get.rootDelegate.toNamed("${Routes.LOBBY}/${Routes.HREOA}");
         },
         child: Text("去登陆"),
       ),

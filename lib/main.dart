@@ -31,6 +31,7 @@ class MainApp extends StatelessWidget {
             logWriterCallback: Logger.write,
             title: 'Flutter Getx 学习',
             enableLog: true,
+            defaultTransition: Transition.rightToLeft,
             theme: ThemeData(
               colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
               useMaterial3: true,
