@@ -1,6 +1,7 @@
 # flutter_getx_st
 
-学习 Flutter Getx 框架教程.
+学习 Flutter Getx 框架教程。
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Jin857/flutter_getx_st)
 
 ## 优点:
 
